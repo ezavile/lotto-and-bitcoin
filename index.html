@@ -15,27 +15,27 @@
         <div class="lb_Header-ribbon">
           <span class="lb_u-bgLightOrange">New</span>
         </div>
-    </header>
+      </header>
       <aside class="lb_Sidebar lb_u-bgDarkGray">
         <h2 class="lb_Sidebar-title lb_u-fontSizeMd lb_u-bgDark">
           The Irish Lotto
         </h2>
         <div class="lb_Sidebar-content">
-      <p>
+          <p>
             Since 16<sup>th</sup> April 1988, the Irish Lotto draw takes place
             every Saturday at 8pm. On 30<sup>th</sup> May 1990 an additional
             Wednesday evening draw was introduced.
-      </p>
-      <p>
+          </p>
+          <p>
             What would EUR 100 in winnings invested on a draw date be worth in
             Euro now?
-      </p>
-      <p>
+          </p>
+          <p>
             Enter a date and time in the form to get the next draw date and
             time, with the current value of your investment.
-      </p>
+          </p>
         </div>
-    </aside>
+      </aside>
       <main class="lb_Main">
         <article class="lb_MainForm lb_u-bgDarkGray">
           <h2 class="lb_MainForm-title lb_u-fontSizeMd lb_u-bgDark">
@@ -56,21 +56,26 @@
             >
               Submit
             </button>
-      </form>
+          </form>
         </article>
         <article class="lb_MainTable lb_u-bgDarkGray">
           <h2 class="lb_u-onlyRead">Results</h2>
           <table id="tableRef" class="lb_MainTable-content">
             <thead class="lb_u-fontSizeSm lb_u-bgDark">
-          <tr>
-            <th>Draw Date/Time</th>
-            <th>Your Bitcoin's Value</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+              <tr>
+                <th>Draw Date/Time</th>
+                <th>Your Bitcoin's Value</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </article>
-    </main>
+      </main>
     </div>
+    <script type="module" src="scripts/utils.js"></script>
+    <script type="module" src="scripts/api-service.js"></script>
+    <script type="module" src="scripts/table-service.js"></script>
+    <script type="module" src="scripts/lotto-draw-service.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
