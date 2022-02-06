@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lotto & Bitcoin</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body>
-    <header>
-      <h1>Lotto & Bitcoin</h1>
-      <span>New</span>
+  <body class="lb_u-bgLightGray">
+    <div class="lb_Container">
+      <header class="lb_Header lb_u-bgDark">
+        <h1 class="lb_u-fontSizeLg">Lotto & Bitcoin</h1>
+        <div class="lb_Header-ribbon">
+          <span class="lb_u-bgLightOrange">New</span>
+        </div>
     </header>
-    <aside>
-      <h2>The Irish Lotto</h2>
+      <aside class="lb_Sidebar lb_u-bgDarkGray">
+        <h2 class="lb_Sidebar-title lb_u-fontSizeMd lb_u-bgDark">
+          The Irish Lotto
+        </h2>
+        <div class="lb_Sidebar-content">
       <p>
-        Since 16th April 1988, the Irish Lotto draw takes place every Saturday
-        at 8pm. On 30th May 1990 an additional Wednesday evening draw was
-        introduced.
+            Since 16<sup>th</sup> April 1988, the Irish Lotto draw takes place
+            every Saturday at 8pm. On 30<sup>th</sup> May 1990 an additional
+            Wednesday evening draw was introduced.
       </p>
       <p>
-        What would EUR 100 in winnings invested on a draw date be worth in Euro
-        now?
+            What would EUR 100 in winnings invested on a draw date be worth in
+            Euro now?
       </p>
       <p>
-        Enter a date and time in the form to get the next draw date and time,
-        with the current value of your investment.
+            Enter a date and time in the form to get the next draw date and
+            time, with the current value of your investment.
       </p>
+        </div>
     </aside>
-    <main>
-      <h2>Enter a Date and Time</h2>
-      <form>
-        <input placeholder="Enter a Date and Time" type="datetime-local" />
-        <button type="submit">Submit</button>
+      <main class="lb_Main">
+        <article class="lb_MainForm lb_u-bgDarkGray">
+          <h2 class="lb_MainForm-title lb_u-fontSizeMd lb_u-bgDark">
+            Enter a Date and Time
+          </h2>
+          <form class="lb_MainForm-content" onsubmit="onSubmit(event)">
+            <input
+              id="inputRef"
+              class="lb_MainForm-content-input"
+              placeholder="Enter a Date and Time"
+              type="datetime-local"
+              required
+            />
+            <button
+              id="buttonRef"
+              class="lb_MainForm-content-button"
+              type="submit"
+            >
+              Submit
+            </button>
       </form>
-      <table>
-        <thead>
+        </article>
+        <article class="lb_MainTable lb_u-bgDarkGray">
+          <h2 class="lb_u-onlyRead">Results</h2>
+          <table id="tableRef" class="lb_MainTable-content">
+            <thead class="lb_u-fontSizeSm lb_u-bgDark">
           <tr>
             <th>Draw Date/Time</th>
             <th>Your Bitcoin's Value</th>
@@ -42,6 +69,8 @@
         </thead>
         <tbody></tbody>
       </table>
+        </article>
     </main>
+    </div>
   </body>
 </html>
